@@ -20,13 +20,15 @@
     jQuery(autoPopulateFormFields);
 </script>
 <body>
-<form>
-
-	<input id="anInput" type="text" /><br />
-	<input name="otherInput" type="text" /><br />
-
-	<input name="anInput" type="text" value="Will Not Be Populated." />
-
-</form>
+  <form>
+    <h3>prepopulate these fields</h3>
+    <label>anInput: <input id="anInput" type="text" /></label><br />
+    <label>otherInput: <input name="otherInput" type="text" /></label><br />
+  </form>
+  <ul>
+    <li><a href="?anInput=foo">populate anInput with "foo"</a></li>
+    <li><a href="?otherInput=bar">populate otherInput with "bar"</a></li>
+    <li><a href="?anInput=foo&otherInput=bar">populate both</a></li>
+  </ul>
 </body>
 </html>
