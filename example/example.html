@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="../src/PopulateFormFields.js"></script>
+
+<!--
+
+	As long as the two scripts above are loaded, the code below is all that is needed to initiate the prepopulation on page load.
+
+	If an element has the ID the same as the parameter name, that is populated.
+	Then, if a form element has the name the same as the parameter name, that is chosen to be populated.
+
+	Warning: at the moment there is almost no error handling.
+
+    -->
+
+<script>
+	jQuery(autoPopulateFormFields);
+</script>
+<body>
+<form>
+
+	<input id="anInput" type="text" /><br />
+	<input name="otherInput" type="text" /><br />
+
+	<input name="anInput" type="text" value="Will Not Be Populated." />
+
+</form>
+</body>
+</html>

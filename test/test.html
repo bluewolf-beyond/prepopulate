@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+	index.html
+
+	2011 May 20	Andrew Couch	created
+	2011 June 30	Andrew Couch	modified for form populating
+
+	The following code was taken from the demo page for QUnit in the jQuery documentation.
+
+	The test fixture markup was created to be a basic form.
+
+    -->
+
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/qunit/git/qunit.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://code.jquery.com/qunit/git/qunit.js"></script>
+
+<!--
+
+	The script being tested is included here.
+
+    -->
+  <script type="text/javascript" src="../src/PopulateFormFields.js"></script>
+<!--
+
+	The test code is included here.
+
+    -->
+  <script type="text/javascript" src="test.js"></script>
+  
+</head>
+<body>
+  <h1 id="qunit-header">Prepopulating Form Fields Test</h1>
+ <h2 id="qunit-banner"></h2>
+ <div id="qunit-testrunner-toolbar"></div>
+ <h2 id="qunit-userAgent"></h2>
+ <ol id="qunit-tests"></ol>
+ <div id="qunit-fixture">
+
+<!--
+
+	Here begins the test fixture markup
+
+    -->
+
+<form>
+
+	<input name="anInput" id="anInput" type="text" /><br />
+
+	<input name="otherInput" id="otherInput" type="text" /><br />
+
+	<input name="radioInput" id="radioOne" value="one" type="radio" /><br />
+
+	<input name="radioInput" id="radioTwo" value="two" type="radio" /><br />
+
+</form>
+
+<!--
+
+	Here ends the test fixture markup
+
+    -->
+
+</div>
+</body>
+</html>
