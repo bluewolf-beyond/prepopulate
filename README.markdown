@@ -17,25 +17,17 @@ match either the id or name of an input field.
 example:
 
 ```html
-<html>
-  <head>
-    <title>prepopulate example</title>
-    <script src="jQuery.js"></script>
-    <script src="PrepopulateFormFields.js"></script>
-    <script> jQuery(autoPopulateFormFields); </script>
-  </head>
-  <body>
-    <form>
-      <input type="text" id="foo">
-      <input type="text" name="bar">
-    </form>
-  </body>
-</html>
+<form>
+  <input type="text" id="foo">
+  <input type="text" name="bar">
+</form>
 ```
 
 entering the url `example.com/form.html?foo=hello&amp;bar=world`
 would enter the value "hello" into the `foo` field and
 "world" into the `bar` field on page load.
+
+for a more complete example, check out the `example` folder.
 
 documentation
 -------------
